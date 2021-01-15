@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "todos"
+  "defaultProject": "todos",
+  "cli": {
+    "analytics": false
+  }
 }
