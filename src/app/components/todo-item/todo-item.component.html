@@ -1,3 +1,11 @@
-<div class="todo" [ngClass]="{'is-completed': todo.completed}">
-    {{todo.title}}:{{todo.completed}}
+<div class="todo" [ngClass]="{'completed': todo.completed}">
+    <p>
+        <input (change)="toggle(todo)" type="checkbox" [checked]="todo.completed"/>
+        <label for="{{todo.id}}">
+            {{todo.title}}
+        </label>
+        <button (click)="delete(todo)" class="delete">
+            X
+        </button>
+    </p>
 </div>

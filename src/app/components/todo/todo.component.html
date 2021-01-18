@@ -1,3 +1,7 @@
 
-    <app-todo-item *ngFor="let todo of todos" [todo]=todo>
+    <form class="form" (ngSubmit)="addTodo()">
+        <input type="text" name="title" [(ngModel)]="title" placeholder="">
+        <input type="submit" value="Submit" class="btn">
+    </form>
+    <app-todo-item *ngFor="let todo of todos" [todo]=todo (onDelete)=onDelete($event)>
     </app-todo-item>
