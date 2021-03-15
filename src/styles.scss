@@ -26,3 +26,17 @@ a {
 		background: #666;
 	}
 }
+
+.form {
+	display: flex;
+  }
+
+  .form input[type='text'] {
+	flex: 10;
+	padding: 5px;
+  }
+
+  .form input[type='submit'] {
+	flex: 2;
+	background: rgb(6, 173, 6);
+  }
